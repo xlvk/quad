@@ -24,7 +24,9 @@ func QuadD(x, y int) {
 			}
 		}
 	}
-	z01.PrintRune('\n')
+	if y > 1 {
+		z01.PrintRune('\n')
+	}
 	for i := 0; i < y-2; i++ {
 		z01.PrintRune('B')
 		if x == 1 {
